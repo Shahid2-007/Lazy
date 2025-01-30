@@ -1,6 +1,6 @@
 return {
   { "folke/trouble.nvim", enabled = false },
-  { "ThePrimeagen/harpoon", enabled = false },
+  { "folke/which-key.nvim", enabled = false },
   { "rafamadriz/friendly-snippets", enabled = false },
   { "levis6991/gitsigns.nvim", enabled = false },
   { "echasnovski/mini.ai", enabled = false },
