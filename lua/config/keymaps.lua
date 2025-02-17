@@ -9,12 +9,12 @@ local tail = { noremap = true, silent = true }
 
 -- use jk to exit insert mode
 keymap.set({ "i", "s", "v" }, "jk", "<ESC>", tail)
-keymap.set(
-  "n",
-  "<leader>r",
-  ':w<cr>:!kitty zsh -c "gcc "%:p" -g -o ~/bin/%:t:r && ~/bin/%:t:r; sleep infinity"<cr>',
-  tail
-)
+-- keymap.set(
+--   "n",
+--   "<leader>r",
+--   ':w<cr>:!kitty zsh -c "gcc "%:p" -g -o ~/bin/%:t:r && ~/bin/%:t:r ; sleep infinity"<cr>',
+--   tail
+-- )
 
 -- clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>", tail)
@@ -30,10 +30,10 @@ keymap.set("n", "<leader>+", "<C-a>", tail) -- increment
 keymap.set("n", "<leader>-", "<C-x>", tail) -- decrement
 
 -- disabled keymaps
-keymap.set("n", "<up>", "<NOP>", tail)
-keymap.set("n", "<down>", "<NOP>", tail)
-keymap.set("n", "<left>", "<NOP>", tail)
-keymap.set("n", "<right>", "<NOP>", tail)
+-- keymap.set("n", "<up>", "<NOP>", tail)
+-- keymap.set("n", "<down>", "<NOP>", tail)
+-- keymap.set("n", "<left>", "<NOP>", tail)
+-- keymap.set("n", "<right>", "<NOP>", tail)
 keymap.set("n", "<leader>ca", "<NOP>", tail)
 keymap.set("n", "<leader>cl", "<NOP>", tail)
 keymap.set("n", "<leader>cA", "<NOP>", tail)
